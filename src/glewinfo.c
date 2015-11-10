@@ -5718,6 +5718,15 @@ static void _glewInfo_GL_KHR_texture_compression_astc_ldr (void)
 
 #endif /* GL_KHR_texture_compression_astc_ldr */
 
+#ifdef GL_KHR_texture_compression_astc_sliced_3d
+
+static void _glewInfo_GL_KHR_texture_compression_astc_sliced_3d (void)
+{
+  glewPrintExt("GL_KHR_texture_compression_astc_sliced_3d", GLEW_KHR_texture_compression_astc_sliced_3d, glewIsSupported("GL_KHR_texture_compression_astc_sliced_3d"), glewGetExtension("GL_KHR_texture_compression_astc_sliced_3d"));
+}
+
+#endif /* GL_KHR_texture_compression_astc_sliced_3d */
+
 #ifdef GL_KTX_buffer_region
 
 static void _glewInfo_GL_KTX_buffer_region (void)
@@ -10660,6 +10669,9 @@ static void glewInfo (void)
 #ifdef GL_KHR_texture_compression_astc_ldr
   _glewInfo_GL_KHR_texture_compression_astc_ldr();
 #endif /* GL_KHR_texture_compression_astc_ldr */
+#ifdef GL_KHR_texture_compression_astc_sliced_3d
+  _glewInfo_GL_KHR_texture_compression_astc_sliced_3d();
+#endif /* GL_KHR_texture_compression_astc_sliced_3d */
 #ifdef GL_KTX_buffer_region
   _glewInfo_GL_KTX_buffer_region();
 #endif /* GL_KTX_buffer_region */
